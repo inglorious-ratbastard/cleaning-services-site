@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head.ejs') %> 
+<body>
+
+<%- include('./partials/nav.ejs') %>
+
+<div class="w3-black w3-grayscale w3-large w3-text-amber">
+
+<div class="w3-container w3-small" id="about">
+  <div class="w3-content" id="about-info">
+  
+    <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Zimmerle Brews & Preserves</span></h6>
+      <p> Zimmerle Brews And Preserves was created at home, originally as a hobby, and is now available for everyone to enjoy. All of our products are scratch made from only the freshest ingredients, from our kitchen to your table. Our concept is based on locally sourced goods so that we may produce the finest cured, brewed, and preserved foods to serve your edacious palate. </p>
+    <p>In addition to our non-perishable pantry and brewed menu items, we serve up a variety of spreadable, pickled, and charcuterie delectables for your enjoyment. We are also working on expanding our kitchen to produce various rolled, baked, and other hand-crafted foodstuffs. </p>
+  </div> 
+</div> 
+
+    <center><br>
+    <div class="w3-container w3-small">
+    <button id="disbtn" class="w3-btn w3-black" onclick="document.getElementById('id01').style.display='block'">Disclaimer</button>
+       <div id="id01" class="w3-panel w3-black w3-display-container w3-round">
+         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-hover-black">[X]</span>
+         <h6>Product Information</h6>
+        <p>Our food products are made in a home kitchen and are <b>not</b> inspected by the <i>Department of State Health Services</i> or a local <i>Health Department</i>. Consume at your own discretion.</p>
+       </div>
+    </div>   
+    </center>
+    <br>
+
+<div class="w3-container w3-small" id="about">
+  <div class="w3-content" id="about-info">
+    <p>Zimmerle Brews And Preserves is a family owned and run business located in San Antonio, Texas. We strive to bring you the finest products derived from the best local purveyors. This is our focus and why we continue to  work with and support other community kitchens so that our products are also a reflection of their own hard work.</p>
+  </div>
+</div>
+
+<center>
+<img src="https://abrokenperspective.neocities.org/zimmerle/images/162866406_242665867577831_1127511478649010717_n.jpg" 
+onclick="document.getElementById('modal01').style.display='block'" class="about-pop w3-hover-opacity w3-padding-64">
+
+<div id="modal01" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+  <img class="w3-modal-content" src="https://abrokenperspective.neocities.org/zimmerle/images/162866406_242665867577831_1127511478649010717_n.jpg">
+</div>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+<head>
+
+<title>Zimmerle Brews & Preserves | <%= title %></title>
+<link rel="icon" href="/public/images/zbplogo.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.splash {
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.imgSlide  {
+  padding-top: 40px;
+  display: block; 
+  margin:auto;
+  height: 300px;
+  width: 480px;
+}
+
+/* Index */
+.about-pop-mn {
+ height: 230px;
+ width: 245px;
+ -webkit-animation:pop-in 1.0s;
+ -moz-animation:pop-in 1.0s;
+ -ms-animation:pop-in 1.0s;
+}
+
+/* About */
+#about-info {
+  max-width:700px;
+}
+
+#id01 {
+  display: none;
+  max-width: 400px;
+  margin-bottom: 10px;
+  border: 1px solid khaki;
+}
+
+#disbtn {
+ border: 1px solid khaki;
+}
+
+.about-pop {
+ height: 300px;
+ width: 250px;
+ -webkit-animation:pop-in 1.0s;
+ -moz-animation:pop-in 1.0s;
+ -ms-animation:pop-in 1.0s;
+}
+
+@-webkit-keyframes pop-in {
+0% { opacity: 0; -webkit-transform: scale(0.5); }
+100% { opacity: 1; -webkit-transform: scale(1); }
+}
+@-moz-keyframes pop-in {
+0% { opacity: 0; -moz-transform: scale(0.5); }
+100% { opacity: 1; -moz-transform: scale(1); }
+}
+@keyframes pop-in {
+0% { opacity: 0; transform: scale(0.5); }
+100% { opacity: 1; transform: scale(1); }
+}
+
+/* Board */
+#board-info {
+ max-width: 500px;
+ margin-bottom: 475px;
+}
+
+.w3-row-padding {
+  /* display: grid;
+  grid-template-columns: repeat(2, 62%);
+  justify-content: space-between; 
+  margin: 0px 0 0 -100px; */
+} 
+
+.w3-card-4 {
+ width: 300px;
+} 
+
+/* Menu */
+.menu {
+  display: none;
+}
+
+#menu-content {
+  max-width: 625px;
+  font-size: 13px;
+}
+
+/* Order */
+#order-info {
+ max-width:500px;
+ margin-bottom: 665px;
+ /* padding-bottom: 100px; */
+}
+
+/* Contact */
+#contact-info {
+  max-width:500px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  font-size:16px;
+  color: white;
+}
+
+.fa-instagram {
+  font-size:40px;
+  color:red;
+}
+
+.fa-google {
+  background: none;
+  color: white;
+  font-size:40px;
+  color:red;
+}
+
+/* Error 404*/
+#error-info {
+ max-width: 500px;
+ margin-bottom: 475px;
+}
+
+::placeholder.message{
+  color: red;
+}
+  
+.ag-preload {
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.ag-preload:before,
+.ag-preload:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ag-preload:before {
+  background-image: url(https://abrokenperspective.neocities.org/zimmerle/images/knife-left.svg);
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  -webkit-animation: an-preload-left 1s alternate linear;
+  -moz-animation: an-preload-left 1s alternate linear;
+  -o-animation: an-preload-left 1s alternate linear;
+  animation: an-preload-left 1s alternate linear;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.ag-preload:after {
+  background-image: url(https://abrokenperspective.neocities.org/zimmerle/images/knife-right.svg);
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  -webkit-animation: an-preload-right 1s alternate linear;
+  -moz-animation: an-preload-right 1s alternate linear;
+  -o-animation: an-preload-right 1s alternate linear;
+  animation: an-preload-right 1s alternate linear;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes an-preload-left {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+    transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+  }
+}
+
+@-moz-keyframes an-preload-left {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(45deg) scale(1, 1) skewX(0deg) skewY(0deg) translate(-30px, 0px);
+    transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+  }
+}
+
+@-ms-keyframes an-preload-left {
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+    transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+  }
+}
+
+@-o-keyframes an-preload-left {
+  0% {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+    transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+  }
+}
+
+@keyframes an-preload-left {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+    -moz-transform: rotate(45deg) scale(1, 1) skewX(0deg) skewY(0deg) translate(-30px, 0px);
+    -ms-transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+    -o-transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+    transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(-30px, 0px);
+  }
+}
+
+@-webkit-keyframes an-preload-right {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+    transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+  }
+}
+
+@-moz-keyframes an-preload-right {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-45deg) scale(1, 1) skewX(0deg) skewY(0deg) translate(30px, 0px);
+    transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+  }
+}
+
+@-ms-keyframes an-preload-right {
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+    transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+  }
+}
+
+@-o-keyframes an-preload-right {
+  0% {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+    transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+  }
+}
+
+@keyframes an-preload-right {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+    -moz-transform: rotate(-45deg) scale(1, 1) skewX(0deg) skewY(0deg) translate(30px, 0px);
+    -ms-transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+    -o-transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+    transform: rotate(-45deg) scale(1, 1) skew(0deg, 0deg) translate(30px, 0px);
+  }
+}
+</style>
+
+</head>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head.ejs') %> 
+<body>
+
+<%- include('./partials/nav.ejs') %> 
+
+<%- include('./partials/splash.ejs') %>
+
+<div class="w3-black w3-grayscale w3-large w3-text-amber">
+
+<div class="w3-container w3-small" id="about">
+  <div class="w3-content" id="about-info">
+  
+    <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Zimmerle Brews & Preserves</span></h6>
+      <p> Zimmerle Brews And Preserves was created at home, originally as a hobby, and is now available for everyone to enjoy. All of our products are scratch made from only the freshest ingredients, from our kitchen to your table. Our concept is based on locally sourced goods to produce the finest cured, brewed, and preserved foods to serve your edacious palate. </p>
+    <p>In addition to our non-perishable pantry and brewed menu items, we serve up a variety of spreadable, pickled, and charcuterie delectables for your enjoyment. We are also working on expanding our kitchen to produce various rolled, baked, and other hand-crafted foodstuffs. </p>
+  </div> 
+</div> 
+
+    <center><br>
+    <div class="w3-container w3-small">
+    <button id="disbtn" class="w3-btn w3-black" onclick="document.getElementById('id01').style.display='block'">Disclaimer</button>
+       <div id="id01" class="w3-panel w3-black w3-display-container w3-round">
+         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-hover-black">[X]</span>
+         <h6>Product Information</h6>
+        <p>Our food products are made in a home kitchen and are <b>not</b> inspected by the <i>Department of State Health Services</i> or a local <i>Health Department</i>. Consume at your own discretion.</p>
+       </div>
+    </div>   
+    </center>
+    <br>
+
+    <div class="w3-container w3-small" id="about">
+  <div class="w3-content" id="about-info">
+    <p>Zimmerle Brews And Preserves is a family owned and run business located in San Antonio, Texas. We strive to bring you the finest products derived from the best local purveyors. This is our focus and why we continue to  work with and support other community kitchens so that our products are also a reflection of their own hard work.</p>
+  </div>
+</div>
+
+<center>
+<img src="https://abrokenperspective.neocities.org/zimmerle/images/162866406_242665867577831_1127511478649010717_n.jpg" 
+onclick="document.getElementById('modal01').style.display='block'" class="about-pop-mn w3 w3-hover-opacity w3-padding-32">
+
+<div id="modal01" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+  <img class="w3-modal-content" src="https://abrokenperspective.neocities.org/zimmerle/images/162866406_242665867577831_1127511478649010717_n.jpg">
+</div>
+</center>
+
+<div class="w3-container" id="menu">
+  <div class="w3-content" id="menu-content">
+ 
+    <h6 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">The Preserved Pantry</span></h6>
+  
+    <div class="w3-row w3-center w3-card w3-padding w3-border">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Palatables</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Noshery</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-38 w3-card w3-border">
+      <h5>Fig Jam (8oz)</h5>
+      <p class="w3-text-grey w3-hover-text-lime">$ 6.00</p>
+    
+      <h5>Apricot Jam (8oz)</h5>
+      <p class="w3-text-grey">$ 6.00</p>
+    
+      <h5>Starwberry Preserves (16oz)</h5>
+      <p class="w3-text-grey">$ 7.00</p>
+      
+      <h5>Prickly Pear Jelly (16oz)</h5>
+      <p class="w3-text-grey">$ 7.00</p>
+    
+      <h5>Apple Butter (16oz)</h5>
+      <p class="w3-text-grey">$ 7.00</p>
+    
+      <h5>Mandarin Orange Marmalade (8oz)</h5>
+      <p class="w3-text-grey">$ 5.00</p>
+      
+      <h5>Whole Grain Mustard (16oz)</h5>
+      <p class="w3-text-grey">$ 7.00</p>
+      
+      <h5>Bread & Butter Pickles (16oz)</h5>
+      <p class="w3-text-grey">$ 7.00</p>
+      
+      <h5>Sauerkraut (16oz)</h5>
+      <p class="w3-text-grey">$ 7.00</p>
+      
+      <h5>Kimchi (16oz)</h5>
+      <p class="w3-text-grey">$ 10.00</p>
+      
+      <h5>Candied Jalapenos (8oz)</h5>
+      <p class="w3-text-grey">$ 5.00</p>
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-38 w3-card w3-border">
+      <h5>Kombucha (16oz/33oz)</h5>
+      <p style="font-size:12px">Kombucha is a slightly sour, fizzy beverage made from sweetened black tea that has been fermented </p>
+      <p class="w3-text-grey">$ 5.00/$8.00</p>
+
+      <h5>Jun (16oz/33oz)</h5>
+      <p style="font-size:12px">Kombucha is a slightly sour, fizzy beverage made from sweetened black tea that has been fermented </p>
+      <p class="w3-text-grey">$ 7.00/$12.00</p>
+    
+      <h5>Ginger Beer (16oz)</h5>
+      <p style="font-size:12px">In comparison to our other fermented treats, ginger beer is more robust in flavor with a spicy quality.</p>
+      <p class="w3-text-grey">$ 6.00</p>
+      
+      <p style="font-size:15px">* Inquire about the hodgepodge of accessible flavors for our brewed goods.</p>
+    
+    </div>  
+    
+    <br>
+    <center>
+      
+<button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-center">Cured</button>
+         <div id="Demo1" class="w3-container w3-hide">
+            <h6>Section 1</h6>
+            <p>Some text..</p>
+        </div>
+      
+ <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-center">Canned</button>
+         <div id="Demo2" class="w3-container w3-hide">
+            <h6>Section 2</h6>
+            <p>Some text..</p>
+         </div>
+      
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-black w3-center">Brewed</button>
+         <div id="Demo3" class="w3-container w3-hide">
+            <h6>Section 3</h6>
+            <p>Some text..</p>
+      </div>
+      
+ <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-black w3-center">Spreads</button>
+         <div id="Demo4" class="w3-container w3-hide">
+            <h6>Section 4</h6>
+            <p>Some text..</p>
+         </div>
+<button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-black w3-center">Artisinal</button>
+         <div id="Demo5" class="w3-container w3-hide">
+            <h6>Section 5</h6>
+            <p>Some text..</p>
+         </div>         
+    </center>
+    
+  </div>
+</div>
+
+<div class="w3-container w3-small" id="where">
+
+  <div class="w3-content" id="contact-info">
+    <h6 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"> From Board to Table</span></h6>
+    <p>Hopefully our scratch made goods will find their way into your own kitchen. <br> To make that happen you can contact us thru any of the necessary means below.</p>
+
+    <center>
+     <p>Follow us on social media or contact us directly <br>Schedule an order or event with us thru Google</p>
+     <a href="https://www.facebook.com/ZimmerleBrewsAndPreserves" class="fa fa-facebook w3-opacity"></a>
+     <a href="https://www.instagram.com/zimmerle_brews_and_preserves/" class="fa fa-instagram"></a>
+     <a href="mailto:zimmerlebrewsandpreserves@gmail.com" class="fa fa-google"></a>
+     </center>
+
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+
+   <form method="post" action="form_action.php" target="_self">
+      <p><input class="w3-input w3-border w3-black w3-round" type="text" placeholder="Name" required name="Name"></p>
+
+      <p><input class="w3-input w3-border w3-black w3-round"  type="text" placeholder="Email" required name="Email"></p>
+
+      <p><input class="w3-input w3-border w3-black w3-round"  type="text" placeholder="Subject" required name="Subject"></p>
+
+      <p><input class="w3-input w3-border w3-black w3-round" style="height: 100px;" type="text" placeholder="Message" required name="Message"></p>
+
+    <center><p><button class="w3-button w3-black w3-small w3-border" type="submit">SEND MESSAGE</button></p></center>
+    </form>
+    
+    </div> 
+</div> 
+
+<%- include('./partials/footer.ejs') %> 
+
+<script>
+   function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey w3-opacity";
+}
+document.getElementById("myLink").click();
+
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+} 
+</script>
+
+</body>
+</html>
