@@ -1,19 +1,36 @@
-<div class="w3-top">
-  <div class="w3-bar w3-black">
-    <div class="w3-col-1 s1">
-      <a href="/" class="w3-bar-item w3-button w3-hover-none w3-text-amber w3-grayscale w3-hover-text-lime">Home</a>
-    </div>
-    <div class="w3-col-1 s1">
-      <a href="/about" class="w3-bar-item w3-button w3-hover-none w3-text-amber w3-grayscale w3-hover-text-lime">Info</a>
-    </div>
-    <div class="w3-col-1 s1">
-      <a href="/board" class="w3-bar-item w3-button  w3-hover-none w3-text-amber w3-grayscale  w3-hover-text-lime">Board</a>
-    </div>
-    <div class="w3-col-1 s1">
-      <a href="/menu" class="w3-bar-item w3-button w3-hover-none w3-text-amber w3-grayscale  w3-hover-text-lime">Menu</a>
-    </div>
-    <div class="w3-col-1 s1">
-      <a href="/contact" class="w3-bar-item w3-button w3-hover-none w3-text-amber w3-grayscale  w3-hover-text-lime">Contact</a>
-    </div>
+<nav>
+  <div class="nav-wrapper teal accent-4">
+     <a href="/" class="brand-logo"  style="font-size:22px">&nbsp&nbsp;Pro Cleaning Services</a>
+     
+      <a href="#" class="dropdown-trigger hide-on-med-and-up" data-target="dropdown"><i class="material-icons" style="margin-left: 10px;">menu</i></a> 
+    
+      <ul class="right hide-on-med-only">
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/clean">Cleaning</a></li>
+        <li><a href="/service">Services</a></li>
+        <li><a href="/standard">Reputation</a></li>
+        <li><a href="/hire">Jobs/Careers</a></li>
+      </ul>
   </div>
+</nav>
+
+<ul class="dropdown-content" id="dropdown">
+   <li><a href="/about">About Us</a></li>
+   <li><a href="/clean">Cleaning</a></li>
+   <li><a href="/service">Services</a></li>
+   <li><a href="/standard">Reputation</a></li>
+   <li><a href="/hire">Jobs/Careers</a></li>
+</ul>
+
+<div class="fixed-action-btn" style="margin-bottom: 40px;">
+  <a class="btn-floating btn-small teal">
+    <i class="large material-icons">contacts</i>
+  </a>
+  <ul>                                   
+    <li><a class="btn-floating red" href="tel:+1-401-555-1125"><i class="material-icons">call</i></a></li>
+    <li><a class="btn-floating yellow darken-1"
+    href="mailto:sapros@saprocleantx.com"><i class="material-icons">email</i></a></li>
+    <li><a class="btn-floating green" href="/quote"><i class="material-icons">assessment</i></a></li>
+    <li><a class="btn-floating blue" href="/booking"><i class="material-icons">schedule</i></a></li>
+  </ul>
 </div>

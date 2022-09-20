@@ -1,0 +1,44 @@
+{
+  "files": {
+    "frontend/public/css/style.css": [
+      {
+        "id": "e1ac0a47-c78d-4f79-bf03-c40e0387dc69",
+        "line": 7,
+        "version": 35,
+        "index": 89
+      }
+    ],
+    "frontend/views/index.ejs": [
+      {
+        "id": "fd2da99c-f5e6-405e-a941-091c2c721dc9",
+        "line": 87,
+        "version": 7108,
+        "index": 4388
+      }
+    ],
+    "frontend/views/partials/footer.ejs": [
+      {
+        "id": "11efdec5-3393-4882-b19f-27572d1fe7cd",
+        "line": 47,
+        "version": 8359,
+        "index": 2549
+      }
+    ],
+    "frontend/views/partials/head.ejs": [
+      {
+        "id": "baad1d15-358e-4439-838a-c6251ee6303a",
+        "line": 246,
+        "version": 14388,
+        "index": 4460
+      }
+    ],
+    "frontend/views/standard.ejs": [
+      {
+        "id": "15721aa2-42d6-4c66-b04f-49bd5b684870",
+        "line": 180,
+        "version": 12098,
+        "index": 7475
+      }
+    ]
+  }
+}

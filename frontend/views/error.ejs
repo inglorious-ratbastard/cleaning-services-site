@@ -5,26 +5,28 @@
 
 <%- include('./partials/nav.ejs') %>
 
-<div class="w3-container w3-black w3-small w3-grayscale w3-text-amber" id="error">
 
- <div class="w3-content" id="error-info">
- 
- <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Sorry, That Page Cannot Be Found</span></h6>
+ <div class="container center-align">
+   
+   <h6 class="center-align"style="margin-top: 80px;"><span class="soon" style="font-weight: bold;">Sorry, that page cannot be found..</span></h6>
+   
+  <div class="box"></div>
 
-   <div class="ag-preload  w3-animate-zoom"></div>
+   <h6 class="center-align"style="margin-top: 80px; margin-bottom: 100px;" span class="soon" style="font-weight: bold;">You will be redirected shortly..</span></h6>
+   
+ </div> 
 
-   <div class="faux w3-tiny">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+<script>
+  setTimeout(function () {
+    window.location = 'https://cleaning-services-site.ingloriousrat.repl.co/';
+  }, 10000)
+</script>
   
-  <section class="faux-wrap">
-    <p style="margin-bottom: 15px">It Looks like you stumbled into our pantry</p>
-    <div class="faux-info">
-      <div class="zee-circle w3-animate-zoom"><a href="/" style="text-decoration: none;">Z</a></div>
-    </div>
-  </section>
- </div>
-
- </div>
-</div>
-
+<%- include('./partials/scripts.ejs') %>
+<%- include('./partials/footer.ejs') %> 
+  
 </body>
 </html>

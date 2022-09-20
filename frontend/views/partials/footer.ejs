@@ -1,17 +1,106 @@
-<div class="w3-center w3-black w3-padding-48 w3-small">
+<footer class="page-footer teal lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h6 class="white-text" style="margin-left: 0.8rem;">Professional Cleaning Services</h6>
+          <p class="col s12 m11 grey-text text-lighten-4"style="margin-bottom:25px;">We would love to hear from you! Send us a message to let us know what you think. Follow us on social media for updates and more cleaning tips & content. Thanks for your continued business and recommendations of our services.</p>
+           
+<div class="foot-social row center-align" id="med_ia">
+  <a class="modal-trigger" href="#modal1">
+  <i class="fa-solid fa-envelope fa-lg col l2"></i></a>
+  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-lg col l2"></i></a>
+  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg col l2"></i></a>
+  <a href="https://twitter.com/home"><i class="fa-brands fa-twitter fa-lg col l2"></i></a>
+        
+  <div id="modal1" class="modal">
+    <div class="modal-content teal-text text-darken-4">
+      <h5><b>Send Us a Message</b></h5>
+      <p class="teal-text text-darken-2" style="font-weight: bold;">We'd love to hear your feedback/comments..</p>
+    </div>
+  <div class="valign-wrapper">
+    <form method="POST" action="/sendFeed" class="col s10 pull-s1">
+      <div class="row">
+        <div class="input-field col s6">
+        <i class="material-icons prefix teal-text text-darken-4">account_circle</i>
+          <input id="first_name" type="text" class="validate" name="first">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+        <i class="material-icons prefix teal-text text-darken-4">account_circle</i>
+          <input id="last_name" type="text" class="validate" name="last">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="input-field col s12">
+          <i class="material-icons prefix teal-text text-darken-4">email</i>
+          <input id="email" type="email" class="validate" name="email">
+          <label for="email">Email Address</label>
+        </div>
+      </div>
+      <div class="row center-align">
+        <div class="input-field col s12">
+          <i class="material-icons prefix teal-text text-darken-4">feedback</i>
+          <textarea id="textarea1" class="materialize-textarea" data-length="350" name="comment"></textarea>
+          <label for="textarea1">Comments</label>
+        </div>
+      </div>
+      <div class="row">
+       <button class="waves-effect waves-light btn" type="submit" name="action">Submit</button>
+      </div>
+    </form> 
+  </div>
+    <div class="modal-footer">
+      <a href="#!" class="btn blue-grey darken-4 modal-close">Close</a>
+    </div>
+  </div>   
+</div> 
+          
+  <div class="row" style="margin-left: 2px;">
+    <div class="input-field inline col s6">
+      <input id="search" type="text" class="validate blue-grey lighten-5" placeholder="&nbsp;Search...">
+    </div>
+    <div class="input-field inline col s6">
+      <button class="waves-effect waves-light btn-small deep-purple lighten-2" type="submit" name="action"> Search</button>
+    </div>
+  </div>
+</div>          
 
-<!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
--->
-
-<h1 class="w3-center w3-padding-38 w3-small"><span class="w3-tag">Connect With Us on Social Media</span></h1>
-
-<div class="social" id="social">
-  <a href="https://www.facebook.com/ZimmerleBrewsAndPreserves"><i class="fa fa-facebook fa-2x qq" aria-hidden="true"></i></a>
-  <a href="https://www.instagram.com/zimmerle_brews_and_preserves/"><i class="fa fa-instagram fa-2x qq" aria-hidden="true"></i></a>
-  <a href="https://www.youtube.com/channel/UClaPIIeriO4dnNTdASAq5kg"><i class="fa fa-youtube fa-2x qq" aria-hidden="true"></i></a>
-  <a href="https://www.instagram.com/zimmerleeats/"><i class="fa fa-instagram fa-2x qq" aria-hidden="true"></i></a>
-  <a href="mailto:zimmerlebrewsandpreserves@gmail.com"><i class="fa fa-google-plus fa-2x qq" aria-hidden="true"></i></a>
+    <div class="col l3 m3 s6" id="map">
+      <h6 class="white-text">Sitemap</h6>
+        <ul>
+          <li><a class="teal-text text-darken-4" href="/about"><b>About Us</b></a></li>
+          <li><a class="teal-text text-darken-4" href="/clean"><b>Cleaning</b></a></li>
+          <li><a class="teal-text text-darken-4" href="/service"><b>Services</b></a></li>
+          <li><a class="teal-text text-darken-4" href="/standard"><b>Reputation</b></a></li>
+          <li><a class="teal-text text-darken-4" href="/hire"><b>Jobs/Careers</b></a></li>
+          <li><a class="teal-text text-darken-4" href="/quote"><b>Quote</b></a></li>
+          <li><a class="teal-text text-darken-4" href="/booking"><b>Booking</b></a></li>
+        </ul>
+    </div>
+    <div class="col l3 m3 s6" id="map">
+      <h6 class="white-text">Clean Connections</h6>
+        <ul>
+          <li><a class="teal-text text-darken-4" href="https://www.mollymaid.com/"><b>Molly Maid</b></a></li>
+          <li><a class="teal-text text-darken-4" href="https://www.maids.com/"><b>The Maids</b></a></li>
+          <li><a class="teal-text text-darken-4" href="https://www.merrymaids.com/"><b>Merry Maids</b></a></li>
+          <li><a class="teal-text text-darken-4" href="https://www.maidpro.com/"><b>Maidpro</b></a></li>   
+          <li><a class="teal-text text-darken-4" href="https://www.maidbrigade.com/"><b>Maid Brigade</b></a></li>
+          <li><a class="teal-text text-darken-4" href="https://www.thecleaningauthority.com/"><b>Cleaning Authority</b></a></li>
+        </ul>
+    </div>       
+        
+ </div>       
 </div>
-
-<p>2021 Zimmerle Brews and Preserves / Zimmerle Eats</p>
+  
+<div class="footer-copyright" style="margin-top: -18px;"> 
+  <div class="container">
+    <a class="teal-text text-darken-4 left"
+href="/copyright"><b>© 2022 Pro Cleaning Services</b></a>
+    <a class="grey-text text-lighten-4 right" href="/access">&nbsp;&nbsp;Accessibility</a> 
+    <a class="grey-text text-lighten-4 right" href="/privacy">&nbsp&nbsp;Privacy Policy</a> 
+    <a class="grey-text text-lighten-4 right" href="/terms">&nbsp;&nbsp;Terms of Service</a> 
+  </div>
 </div>
+ 
+</footer>

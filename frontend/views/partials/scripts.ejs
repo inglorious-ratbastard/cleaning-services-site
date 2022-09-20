@@ -1,3 +1,4 @@
+<script>
 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.dropdown-trigger');
@@ -29,6 +30,43 @@
     var instances = M.Datepicker.init(elems, options);
   });
 
+ 
+  $(document).ready(function(){
+      $('#demo-carousel').carousel();
+    });
+
   $(document).ready(function(){
     $('.datepicker').datepicker();
   });
+
+  $(document).ready(function() {
+    $('input#textarea1, textarea#textarea1').characterCounter();
+  });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+});
+
+  $(document).ready(function(){
+    $('.modal').modal();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+});
+
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, options);
+});
+
+$(document).ready(function(){
+    $('.tooltipped').tooltip();
+});
+</script>
