@@ -27,9 +27,9 @@
     "frontend/views/partials/head.ejs": [
       {
         "id": "baad1d15-358e-4439-838a-c6251ee6303a",
-        "line": 246,
-        "version": 14388,
-        "index": 4460
+        "line": 254,
+        "version": 14595,
+        "index": 4628
       }
     ],
     "frontend/views/standard.ejs": [
