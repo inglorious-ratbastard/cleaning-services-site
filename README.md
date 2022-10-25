@@ -2,7 +2,12 @@
 ___
 ###### **Professional Cleaning Services Co.**
 ###### **Entrepreneurial Web Application** 
-###### **Materialize UI/UX - ExpressJS App**
+###### **Materialize UI/UX - ExpressJS App** <br>
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) <br>
+![Materialice CSS](https://img.shields.io/badge/material%20design-757575?style=for-the-badge&logo=material%20design&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ___
 #### **About this Build:**
 ##### **This application was built with simplicity in mind, along with compelling visual synergy that compliments the user interface** 
@@ -42,5 +47,5 @@ ___
 #### * Throroughly **Test** the changes that have been implemented [Testing suite is not included]
 #### - Some suggestions for testing: [Cypress](https://www.cypress.io/), [Jasmine](https://jasmine.github.io/), [Mocha](https://mochajs.org/) 
 #### * Submit a **Pull Request** accurately explaining the changes that were made to this repository
-##### Your contribution will be reviewed and considered for *merge* into **Main** or a separate **branch**. Thank you for assisting in the development and/or advancement of this project.
+##### Your contribution will be reviewed and considered for *merge* into **Main** or a separate **branch**. <br> Thank you for assisting in the development and/or advancement of this project.
 ___
