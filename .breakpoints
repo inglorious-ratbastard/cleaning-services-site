@@ -12,24 +12,24 @@
       {
         "id": "fd2da99c-f5e6-405e-a941-091c2c721dc9",
         "line": 87,
-        "version": 7115,
-        "index": 4388
+        "version": 7198,
+        "index": 4400
       }
     ],
     "frontend/views/partials/footer.ejs": [
       {
         "id": "11efdec5-3393-4882-b19f-27572d1fe7cd",
         "line": 47,
-        "version": 8359,
+        "version": 8360,
         "index": 2549
       }
     ],
     "frontend/views/partials/head.ejs": [
       {
         "id": "baad1d15-358e-4439-838a-c6251ee6303a",
-        "line": 115,
-        "version": 17097,
-        "index": 2565
+        "line": 42,
+        "version": 18784,
+        "index": 1369
       }
     ],
     "frontend/views/standard.ejs": [
