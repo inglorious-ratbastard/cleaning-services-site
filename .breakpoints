@@ -12,8 +12,8 @@
       {
         "id": "fd2da99c-f5e6-405e-a941-091c2c721dc9",
         "line": 87,
-        "version": 7198,
-        "index": 4400
+        "version": 7199,
+        "index": 4401
       }
     ],
     "frontend/views/partials/footer.ejs": [
@@ -27,9 +27,9 @@
     "frontend/views/partials/head.ejs": [
       {
         "id": "baad1d15-358e-4439-838a-c6251ee6303a",
-        "line": 42,
-        "version": 18784,
-        "index": 1369
+        "line": 18,
+        "version": 18809,
+        "index": 1002
       }
     ],
     "frontend/views/standard.ejs": [
