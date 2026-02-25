@@ -7,8 +7,8 @@
 
 <div class="container center-align" style="font-weight: bold;">
    <h6 class="center-align" style="margin-top: 70px; font-weight: bold;"><span class="soon teal-text text-darken-2">Rate Our Services</span></h6>
-  <img src="rateimg.jpg" class="rateimg">
-  <p class="center-align teal-text text-lighten-1" style="margin-top: 35px;"">We'd Love to Hear Your Fedback. </p>
+  <img src="rateimg.jpg" class="rateimg" style="margin-left: -0.313rem;">
+  <p class="center-align teal-text text-lighten-1" style="margin-top: 35px;">We'd Love to Hear Your Fedback. </p>
 </div>
   <p class="rateft center-align" style="font-size: 13px; max-width: 300px; font-weight: bold;">Feel free to let us know your opinions and regards in the area below. We value each and every one of your thoughts and concerns.</p>
   
@@ -18,24 +18,28 @@
 
 <div class="center-align">  
   <div class="row" style="display:inline-block; vertical-align: middle;">
-    <div class="stars">
-    <input class="star star-5" id="star-5" type="radio" name="star" onclick="star5()" />
-    <label class="star star-5" for="star-5"></label>
-    <input class="star star-4" id="star-4" type="radio" name="star" onclick="star4()" />
-    <label class="star star-4" for="star-4"></label>
-    <input class="star star-3" id="star-3" type="radio" name="star" onclick="star3()" />
-    <label class="star star-3" for="star-3"></label>
-    <input class="star star-2" id="star-2" type="radio" name="star" onclick="star2()" />
-    <label class="star star-2" for="star-2"></label>
-    <input class="star star-1" id="star-1" type="radio" name="star" onclick="star1()" />
-    <label class="star star-1" for="star-1"></label>
-   </div>
+     <div class="stars">
+      <input class="star star-5" id="star-5" type="radio" name="star" value="5"/>
+      <label class="star" for="star-5"></label>
+
+      <input class="star star-4" id="star-4" type="radio" name="star" value="4"/>
+      <label class="star" for="star-4"></label>
+
+      <input class="star star-3" id="star-3" type="radio" name="star" value="3"/>
+      <label class="star" for="star-3"></label>
+
+      <input class="star star-2" id="star-2" type="radio" name="star" value="2"/>
+      <label class="star" for="star-2"></label>
+
+      <input class="star star-1" id="star-1" type="radio" name="star" value="1"/>
+      <label class="star" for="star-1"></label>
+    </div>
   </div>
 </div>   
 
  <div class="center-align">
    <input type="checkbox" id="newsletter" />
-   <label for="newsletter" style="color: black; font-weight: bold;">Your Rating: &nbsp;</label>
+   <label for="newsletter" style="color: black; font-weight: bold; font-size: 14px">Your Rating : &nbsp;</label>
    <textarea id="demo" type="text" name="score" readonly
    style="border:none; text-align: center; pointer-events: none;"></textarea>
 </div> 
@@ -69,7 +73,7 @@
      <span class="soon teal-text text-darken-2">Recommended Service Reviews</span></h6>
     <p class="rateft center-align" style="font-size: 13px; max-width: 300px; font-weight: bold;">Want to know what our customers have to say about our services? &nbsp; Read their reviews below and decide for yourself.</p>
      <span class="material-symbols-outlined material-icons 
- prefix" style="color: #CCCC00; font-size: 50px; filter: brightness(85%); padding-top: 20px;">
+ prefix" style="color: #CCCC00; font-size: 35px; filter: brightness(85%); padding-top: 20px;">
 reviews</span> 
    </div>
 
@@ -158,32 +162,6 @@ reviews</span>
 <%- include('./partials/footer.ejs') %>
   
 <script> 
- function star1() {
-  var s1 = document.getElementById("star-1");
-  s1.className = "star > star-1";
-  document.getElementById("demo").innerHTML = "1"; 
-}
- function star2() {
-  var s1 = document.getElementById("star-2");
-  s1.className = "star > star-2";
-  document.getElementById("demo").innerHTML = "2";
-}
- function star3() {
-  var s1 = document.getElementById("star-3");
-  s1.className = "star > star-3";
-  document.getElementById("demo").innerHTML = "3";
-}
- function star4() {
-  var s1 = document.getElementById("star-4");
-  s1.className = "star > star-4";
-  document.getElementById("demo").innerHTML = "4";
-}
- function star5() {
-  var s1 = document.getElementById("star-5");
-  s1.className = "star > star-5";
-  document.getElementById("demo").innerHTML = "5";
-} 
-
 var resetSelected = function (event) {
  document.getElementById("demo").innerHTML = "0"; 
  document.getElementById("rate-form").reset();
