@@ -1,3 +1,8 @@
+element.addEventListener("touchmove", function(e) {
+    if (e.cancelable) {
+        e.preventDefault();
+    }
+});
 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.dropdown-trigger');
