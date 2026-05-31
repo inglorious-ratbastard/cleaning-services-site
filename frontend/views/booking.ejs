@@ -5,11 +5,33 @@
 
 <%- include('./partials/nav.ejs') %>
 
+<style>
+  #date::placeholder {
+  font-weight: bold;
+}
+
+#date::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+#date::-moz-placeholder {
+  font-weight: bold;
+}
+
+#date:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+#date:-moz-placeholder {
+  font-weight: bold;
+}
+</style>
+
  <div class="container">
-   <h6 class="center-align" style="margin-top: 60px"><span class="soon">Schedule Your Cleaning Routine</span></h6>
+   <h6 class="center-align" style="margin-top: 60px; font-style: oblique; font-weight: 600 !important;"><span class="soon">Schedule Your Cleaning Routine</span></h6>
 </div> 
 
-<div class="valign-wrapper" style="margin-top: 60px;">
+<div class="valign-wrapper" style="margin-top: 60px; font-style: oblique; font-weight: 600 !important;">
  <div class="row">
     <form method="POST" action="/getDate" class="col s12">
 
