@@ -218,5 +218,5 @@ app.use((req, res) => {
   res.status(404).render('error', { title: 'Page Not Found' });
 });
 
-app.listen(port, () => 
-console.log(`Listening at http://localhost:${port}`));
+app.listen(port, '0.0.0.0', () => 
+  { console.log(`Listening on port ${port}`); });
