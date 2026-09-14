@@ -13,7 +13,7 @@ app.use(express.static('./frontend/public/images'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
   res.render('index', { title: 'San Antonio Professional Cleaning Services' });

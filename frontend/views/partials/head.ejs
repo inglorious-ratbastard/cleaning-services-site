@@ -19,9 +19,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+  
   body, html {
     height: 100%;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 12px;
   }
 
   .container-indx, .container-abt, .container-hire {
@@ -361,6 +364,14 @@
        margin-top: -25px;
        padding-bottom: 25px;
      }
+
+    #goldchk {
+        margin-top: 0;
+        margin-bottom: 20px;
+        top: 0 !important;
+        font-size: 30px !important;
+    }
+    
      .rateimg {
     height: 100px; 
     width: auto; 
@@ -368,6 +379,33 @@
     margin-left: auto; 
     filter: brightness(120%);
     } 
+  }
+
+  @media (max-width: 992px) {
+      #goldchk {
+          margin-top: 10px;
+          margin-bottom: 30px;
+          top: 0 !important;
+          font-size: 34px !important;
+      }
+  }
+
+  @media (max-width: 768px) {
+      #goldchk {
+          margin-top: 5px;
+          margin-bottom: 30px;
+          top: 0 !important;
+          font-size: 33px !important;
+      }
+  }
+
+  @media (max-width: 600px) {
+      #goldchk {
+          margin-top: 0;
+          margin-bottom: 25px;
+          top: 0 !important;
+          font-size: 32px !important;
+      }
   }
 
   @media (min-width:425px) and (max-width:600px) {
